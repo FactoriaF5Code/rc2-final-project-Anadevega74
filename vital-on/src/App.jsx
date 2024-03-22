@@ -1,9 +1,10 @@
 import { useState } from "react";
+import { Header } from "./components/layout/general/Header";
 
 function App() {
   return (
     <div className="layout">
-      <h1>Red social Vital On</h1>
+      <Header />
     </div>
   );
 }
