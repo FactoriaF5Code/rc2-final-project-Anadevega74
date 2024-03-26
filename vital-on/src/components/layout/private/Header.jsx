@@ -4,15 +4,10 @@ import { Nav } from "./Nav"
 export const Header = () => {
   return (
     <header className="layout__navbar">
-<img className="logo" src="./assets/img/logo sin fondo.png" alt="logo" />
-<div className="navbar__logo">
-
-</div>
-      <div className="navbar__header">
-        
-      </div>
-
-      <Nav />
-    </header>
-  );
-};
+        <div className="navbar__header">
+            <a href="#" className="navbar__title">VITAL ON</a>
+            </div> 
+            
+                </header>
+  )
+}

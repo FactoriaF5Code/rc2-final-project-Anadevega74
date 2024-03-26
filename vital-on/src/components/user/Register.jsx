@@ -1,9 +1,18 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react'
 
-const Register = () => {
+export const Register = () => {
   return (
-    <div>Register</div>
+    <>
+    
+    <header className="content__header content__header--public">
+      <h1 className="content__title">Registro</h1>
+    </header>
+
+    <div className="content__posts">
+    
+    </div>
+    </>
   )
 }
 
-export default Register

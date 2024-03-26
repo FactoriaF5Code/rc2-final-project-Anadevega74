@@ -7,4 +7,6 @@ import "./assets/css/normalize.css";
 import "./assets/css/styles.css";
 import "./assets/css/responsive.css";
 
-ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+ReactDOM.createRoot(document.getElementById("root")).render(
+<App />
+);

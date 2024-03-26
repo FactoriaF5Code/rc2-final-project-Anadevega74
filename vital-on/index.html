@@ -1,12 +1,85 @@
 <!doctype html>
 <html lang="es">
-  <head>
+  <header>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VITAL ON</title>
-  </head>
-  <body>
+  </header>
+
+  <div class="layout">
+    <nav class="layout__navbar">
+        <header class="navbar__header">
+            <a href="#" class="navbar__title">VITAL ON</a>
+            </header> 
+            <div class="navbar__container-lists">
+
+                <ul class="container-lists__menu-list">
+                    <li class="menu-list__item">
+                        <a href="#" clas="menu-list__link">
+                            <i class="fa-solid fa-house"></i>
+                            <span class="menu-list__title">Inicio</span>
+                        </a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#" class="menu-list__link">
+                            <i class="fa-solid fa-list"</i>
+                                <span class="menu-list__title">Timeline</span>
+                        </a>
+                    </li>
+                    
+                    <li class="menu-list__item">
+                        <a href="#" class="menu-list__link">
+                            <i class="fa-solid fa-user"></i>
+                            <span class="menu-list__title">Amigos</span>
+
+                        </a>
+                    </li>
+
+                    <li class="menu-list__item">
+                        <a href="#" class="menu-list__link">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span class="menu-list__title">Hablar</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="container-lists__list-end">
+                    <li class="list-end__item">
+                        <a href="#" class="list-end__link-image">
+                            <img src="assets/img/user.png" class="list-end__img" alt="Imagen">
+
+                        </a>
+                    </li>
+
+                    <li class="list-end__item">
+                        <a href="#" class="list-end__link">
+                            <span class="list-end__name">Ana</span>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div> 
+        </nav>
+
+  <section class="layout__content">
+
+    <header class="content__header">
+      <h1 class="content__title">Timeline</h1>
+      <button class="content__button">Mostrar nuevas</button>
+    </header>
+
+    <div class="content__posts">
+
+      <div class="posts__post">
+
+        <div class="post__container">
+          <div class="post__image-user">
+            <a href="#" class="post__image.link">
+              <img src="assets/img/user.png" class="post__user-image"
+            </a>
+          
+ <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
