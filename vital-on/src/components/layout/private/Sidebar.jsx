@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react';
 import avatar from '../../../assets/img/user.jpg';
 export const Sidebar = () => {
@@ -14,7 +15,7 @@ export const Sidebar = () => {
 
                     <div className="profile-info__general-info">
                         <div className="general-info__container-avatar">
-                            <img src={ avatar } className="container-avatar__img" alt="Foto de perfil"/>
+                            <img src={avatar} className="container-avatar__img" alt="Foto de perfil"/>
                         </div>
 
                         <div className="general-info__container-names">

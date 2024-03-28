@@ -1,14 +1,13 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import { NavLink } from 'react-router-dom';
+// eslint-disable-next-line no-unused-vars
 import avatar from '../../../assets/img/user.jpg';
 
 export const Nav = () => {
   return (
     <nav className="navbar__container-lists">
       
-
-
       <ul className="container-lists__menu-list">
         <li className="menu-list__item">
           <NavLink to="/login"className="menu-list__link">

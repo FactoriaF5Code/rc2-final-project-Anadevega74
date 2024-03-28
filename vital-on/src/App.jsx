@@ -1,10 +1,10 @@
-import { Routing } from './router/Routing';
-
+import { useState } from 'react';
+import { Header } from './components/layout/private/Header';
 function App() {
 
   return (
     <div className='layout'>
-      <Routing />
+      <Header />
 
     </div>
   )

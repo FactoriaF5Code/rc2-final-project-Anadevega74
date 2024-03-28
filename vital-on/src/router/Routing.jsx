@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
 import { PrivateLayout } from "../components/layout/private/PrivateLayout";
@@ -22,9 +23,7 @@ export const Routing = () => {
           <Route path="feed" element={<Feed />} />
         </Route>
 
-        <Route
-          path="*"
-          element={
+        <Route path="*" element={
             <>
               <p>
                 <h1>Error 404</h1>
