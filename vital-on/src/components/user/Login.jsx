@@ -1,13 +1,16 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 
-const Login = () => {
+export const Login = () => {
   return (
     <>
       <header className="content__header content__header--public">
         <h1 className="content__title">Login</h1>
       </header>
 
-      <div className="content__posts"></div>
+      <div className="content__posts">
+        
+      </div>
     </>
   )
 }
