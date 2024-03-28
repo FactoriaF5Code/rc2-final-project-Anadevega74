@@ -5,7 +5,7 @@ import { PublicLayout } from "../components/layout/public/PublicLayout";
 import { Feed } from "../components/publication/Feed";
 import { Login } from "../components/user/Login";
 import { Register } from "../components/user/Register";
-import { Link } from "Link";
+import { Link } from "react-router-dom";
 
 export const Routing = () => {
   return (
