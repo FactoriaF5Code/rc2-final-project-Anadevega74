@@ -5,13 +5,12 @@ export const Nav = () => {
   return (
     <nav className="navbar__container-lists">
       
-
       <ul className="container-lists__menu-list">
         <li className="menu-list__item">
-          <NavLink to="/login" className="menu-list__link">
+          <a href="#" className="menu-list__link">
             <i className="fa-solid fa-house"></i>
             <span className="menu-list__title">Login</span>
-          </NavLink>
+          </a>
         </li>
 
         <li className="menu-list__item">
@@ -21,22 +20,13 @@ export const Nav = () => {
           </a>
         </li>
 
-        <li className="menu-list__item">
-          <a href="#" className="menu-list__link">
-            <i className="fa-solid fa-user"></i>
-            <span className="menu-list__title">Amigos</span>
-          </a>
-        </li>
+       
       </ul>
 
       <ul className="container-lists__list-end">
         <li className="list-end__item">
           <a href="#" className="list-end__link-image">
-            <img
-              src={avatar}
-              className="list-end__img"
-              alt="Imagen de perfil"
-            />
+            <img src={avatar} className="list-end__img" alt="Imagen de perfil"/>
           </a>
         </li>
         <li className="list-end__item">

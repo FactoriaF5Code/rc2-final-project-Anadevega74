@@ -9,7 +9,7 @@ const Login = () => {
 
       <div className="content__posts"></div>
     </>
-  );
-};
+  )
+}
 
-export default Login;
+

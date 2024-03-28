@@ -1,8 +1,9 @@
 import React from "react"
 import { Outlet } from "react-router-dom"
 import { Header } from "./Header";
+import { Sidebar } from "./Sidebar";
 
-export const PublicLayout = () => {
+export const PrivateLayout = () => {
   return (
     <>
       <Header />
@@ -11,7 +12,7 @@ export const PublicLayout = () => {
         <Outlet />
       </section>
       
-      
+      <Sidebar />
     </>
   )
 }

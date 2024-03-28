@@ -1,11 +1,11 @@
 import React from 'react'
-
-const Sidebar = () => {
+import avatar from '../../../assets/img/user.jpg';
+export const Sidebar = () => {
   return (
     <aside className="layout__aside">
 
             <header className="aside__header">
-                <h1 className="aside__title">Hola, Victor</h1>
+                <h1 className="aside__title">Hola, Ana</h1>
             </header>
 
             <div className="aside__container">
@@ -14,7 +14,7 @@ const Sidebar = () => {
 
                     <div className="profile-info__general-info">
                         <div className="general-info__container-avatar">
-                            <img src="assets/img/user.png" className="container-avatar__img" alt="Foto de perfil"/>
+                            <img src={ avatar } className="container-avatar__img" alt="Foto de perfil"/>
                         </div>
 
                         <div className="general-info__container-names">
@@ -56,16 +56,16 @@ const Sidebar = () => {
                     <form className="container-form__form-post">
 
                         <div className="form-post__inputs">
-                            <label for="post" className="form-post__label">¿Qué nos cuentas?</label>
+                            <label htmlFor="post" className="form-post__label">¿Qué nos cuentas?</label>
                             <textarea name="post" className="form-post__textarea"></textarea>
                         </div>
 
                         <div className="form-post__inputs">
-                            <label for="image" className="form-post__label">Sube tu foto</label>
-                            <input type="file" name="image" className="form-post__image"/>
+                            <label htmlFor="image" className="form-post__label">Sube tu foto</label>
+                            <input type="file" name="image" className="form-post__image" />
                         </div>
 
-                        <input type="submit" value="Enviar" className="form-post__btn-submit" disabled/>
+                        <input type="submit" value="Enviar" className="form-post__btn-submit" disabled />
 
                     </form>
 
@@ -77,4 +77,3 @@ const Sidebar = () => {
   )
 }
 
-export default Sidebar
