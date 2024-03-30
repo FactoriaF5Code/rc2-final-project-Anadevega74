@@ -1,8 +1,6 @@
-// eslint-disable-next-line no-unused-vars
-import React from 'react'
-import  { useState } from 'react';
+import { useState } from 'react';
 
-export const useForm = (initialObj  = {}) => {
+export const useForm = (initialObj = {}) => {
   
     const [form, setForm] = useState(initialObj);
 
@@ -12,13 +10,12 @@ export const useForm = (initialObj  = {}) => {
         setForm({
             ...form,
             [name]: value
-        });
-
-        
+        });     
     }
 
-    return (
+    return {
       form,
       changed
-  )
+    };
 }
+

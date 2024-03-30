@@ -3,26 +3,26 @@
     --color-general-text: #333;
     --color-backgroud-navbar: #ed4608;
     --color-text-navbar: white;
-    --color-hover-navbar: #cf4715;
+    --color-hover-navbar: #f96407;
 
     --color-border-headers: #eee;
 
-    --color-background-btn-success: #5cb85c;
-    --color-border-btn-success: #4cae4c;
-    --color-background-btn-success-hover: #449d44;
-    --color-border-btn-success-hover: #398439;
+    --color-background-btn-success: #0e880e;
+    --color-border-btn-success: #19b519;
+    --color-background-btn-success-hover: #0aed0a;
+    --color-border-btn-success-hover: #379a37;
 
-    --color-background-btn-delete: #d9534f;
-    --color-border-btn-delete: #d43f3a;
-    --color-background-btn-delete-hover: #c9302c;
-    --color-border-btn-delete-hover: #ac2925;
+    --color-background-btn-delete: #ed4608;
+    --color-border-btn-delete: #ed4608;
+    --color-background-btn-delete-hover: #f96407;
+    --color-border-btn-delete-hover: hwb(2 15% 33%);
 
     --color-border-post: #ddd;
-    --color-name-user: #337ab7;
+    --color-name-user: #1e7105;
 
     --color-text-black: #555;
-    --color-text-nickname: #969393;
-    --color-number-stats: green;
+    --color-text-nickname: #111010;
+    --color-number-stats: #0e880e;
 
     --color-border-textarea: #ccc;
     --color-border-textarea-focus: #66afe9;
@@ -82,12 +82,13 @@ body {
     color: var(--color-text-navbar);
 }
 
-.navbar__title{
-    font-size: 1.8rem;
-    padding: 1.8rem;
-}
-
-.navbar__container-lists{
+.logo {
+    width: 100px;
+    height: auto;
+    float: left; 
+  }
+  
+  .navbar__container-lists{
     width: 95%;
     display: flex;
     justify-content: space-between;
@@ -167,10 +168,10 @@ body {
 .content__button{
     background-color: var(--color-background-btn-success);
     color: var(--color-text-navbar);
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 2rem;
     border: 1px solid var(--color-border-btn-success);
     border-radius: 0.3rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     line-height: 1.5;
     cursor: pointer;
 }
@@ -227,12 +228,12 @@ body {
 }
 
 .user-info__create-date{
-    color: gray;
+    color: rgb(87, 84, 84);
 }
 
 .post__content{
     margin: 1rem 0;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 500;
 }
 
@@ -438,3 +439,20 @@ button{
     font-size: 1.4rem;
 }
 
+.alert{
+    width: 50%;
+    display: block;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+}
+
+.alert-success{
+    background: #0aed0a;
+    border: 1px solid #0e880e ;
+}
+
+.alert-danger{
+    background: #f76802;
+    border: 1px solid #f75104 ;
+}

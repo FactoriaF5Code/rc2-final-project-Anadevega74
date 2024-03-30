@@ -1,19 +1,19 @@
- // eslint-disable-next-line no-unused-vars
-import React from 'react';
+// eslint-disable-next-line no-unused-vars
+import React, { useState } from 'react';
 import { useForm } from '../../hooks/useForm';
 import { Global } from '../../helpers/Global';
-import { useSate } from 'react';
 
 export const Register = () => {
  
  const { form, changed } = useForm({});
  const [ saved, setSaved ] = useState("not_sended");
- const saveUser = (e) => {
+
+ const saveUser = async (e) => {
     e.preventDefault();
 
     let newUser = form;
 
-    const request = await fetch(Global.url+ "user/register", {
+    const request = await fetch(Global.url + "user/register", {
       method: "POST",
       body: JSON.stringify(newUser),
       headers: {
@@ -23,7 +23,7 @@ export const Register = () => {
 
     const data = await request.json();
 
-    if(data.status == "success"){
+    if(data.status === "success"){
       setSaved("saved");
     }else{
       setSaved("error");
@@ -38,10 +38,15 @@ export const Register = () => {
 
       <div className="content__posts">
 
-        <strong className="alert alert-success">{saved == "saved" ? "Usuario registrado correctamente" : ''}</strong>
-        <strong className="alert alert-danger">{saved == "error" ? "Usuario no registrado" : ''}</strong>
-        
-        <form className="register-form" onSbmit={saveUser}>
+        {saved === "saved" ?
+        <strong className="alert alert-success"> "Usuario registrado correctamente"</strong>
+        : ''}
+
+        {saved === "error" ?
+        <strong className="alert alert-danger"> "Usuario no registrado"</strong>
+        : ''}
+
+        <form className="register-form" onSubmit={saveUser}>
           <div className="form-group">
             <label htmlFor="name">Nombre</label>
             <input type="text" name="name" onChange={changed} />
@@ -73,3 +78,4 @@ export const Register = () => {
     </>
   );
 };
+

@@ -2,6 +2,7 @@
 import React from "react";
 import avatar from "../../../assets/img/user.jpg";
 
+
 export const Nav = () => {
   return (
     <nav className="navbar__container-lists">

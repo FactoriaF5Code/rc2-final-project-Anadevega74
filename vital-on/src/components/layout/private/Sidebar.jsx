@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import avatar from '../../../assets/img/user.jpg';
+
 export const Sidebar = () => {
   return (
     <aside className="layout__aside">
