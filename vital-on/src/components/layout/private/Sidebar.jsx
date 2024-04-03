@@ -1,13 +1,19 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import avatar from '../../../assets/img/user.jpg';
+import useAuth from '../../../hooks/useAuth';
 
 export const Sidebar = () => {
+
+    const {auth} = useAuth();
+
+    console.log(auth);
+
   return (
     <aside className="layout__aside">
 
             <header className="aside__header">
-                <h1 className="aside__title">Hola, Ana</h1>
+                <h1 className="aside__title">Hola, {auth.name}</h1>
             </header>
 
             <div className="aside__container">
@@ -16,12 +22,13 @@ export const Sidebar = () => {
 
                     <div className="profile-info__general-info">
                         <div className="general-info__container-avatar">
-                            <img src={avatar} className="container-avatar__img" alt="Foto de perfil"/>
-                        </div>
+                            {auth.image != "default.png && <img src={Global.url + "user/avatar/" + auth.image} className="container-avatar__img"  alt="Foto de perfil"/>}
+                            {auth.image == "default.png && <img src={avatar} className="container-avatar__img" alt="Foto de perfil"/>}
+                           </div> 
 
-                        <div className="general-info__container-names">
-                            <a href="#" className="container-names__name">Victor Robles</a>
-                            <p className="container-names__nickname">VictorWeb</p>
+                           <div className="general-info__container-names">
+                            <a href="#" className="container-names__name">{auth.name}{auth.surname}</a>
+                            <p className="container-names__nickname">{auth.nick}</p>
                         </div>
                     </div>
 

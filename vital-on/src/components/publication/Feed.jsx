@@ -2,7 +2,8 @@
 import React from 'react';
 import avatar from '../../assets/img/user.jpg';
 
-export default function Feed() {
+export const Feed = () => {
+  
   return (
     <>
       <header className="content__header">

@@ -7,10 +7,12 @@ import { Feed } from "../components/publication/Feed";
 import { Login } from "../components/user/Login";
 import { Register } from "../components/user/Register";
 import { Link } from "react-router-dom";
+import { AuthProvider } from "../context/AuthProvider";
 
 export const Routing = () => {
   return (
     <BrowserRouter>
+    <AuthProvider>
       <Routes>
         <Route path="/" element={<PublicLayout />}>
           <Route index element={<Login />} />
@@ -33,6 +35,7 @@ export const Routing = () => {
           }
         />
       </Routes>
+      </AuthProvider>
     </BrowserRouter>
   );
 };
