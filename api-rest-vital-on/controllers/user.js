@@ -115,6 +115,32 @@ const login = (req, res) => {
         token
     });
 });
+}
+
+const profile = (req, res) => {
+    //Recibir el parámetro del id de usuario por la url
+const id = req.params.id;
+//Consulta para sacar los datos del usuario
+User.findById(id)
+.select({password: 0, role: 0})
+.exec((error, userProfile) => {
+    if(error || !userProfile){
+        return res.status(404).send({
+            status: "error",
+            message: "El usuario no existe o hay un error"
+        });
+    }
+
+
+    //Devolver el resultado
+    return res.status(200).send({
+        status: "success",
+        user: userProfile
+    });
+};
+
+
+
 
 
  
@@ -122,6 +148,7 @@ const login = (req, res) => {
 module.exports = {
     pruebaUser, 
     register,
-    login
-}
+    login,
+    profile
+
 }
