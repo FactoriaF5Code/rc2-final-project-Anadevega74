@@ -8,9 +8,9 @@
     "start": "nodemon index.js"
   },
   "author": "Ana Mari Fernández",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
-    "bcrypt-nodejs": "^0.0.3",
+    "bcrypt": "^5.1.1",
     "cors": "^2.8.5",
     "express": "^4.19.2",
     "install": "^0.13.0",
