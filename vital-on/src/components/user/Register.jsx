@@ -39,10 +39,12 @@ export const Register = () => {
       <div className="content__posts">
 
         {saved === "saved" ?
+        // eslint-disable-next-line react/no-unescaped-entities
         <strong className="alert alert-success"> "Usuario registrado correctamente"</strong>
         : ''}
 
         {saved === "error" ?
+        // eslint-disable-next-line react/no-unescaped-entities
         <strong className="alert alert-danger"> "Usuario no registrado"</strong>
         : ''}
 
